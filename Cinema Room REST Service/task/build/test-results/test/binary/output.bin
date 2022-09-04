@@ -1,0 +1,64 @@
+[1;31m
+Start test 1[0m
+
+)  .   ____          _            __ _ _
+* /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
++( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+, \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
++  '  |____| .__|_| |_|_| |_\__, | / / / /
+* =========|_|==============|___/=/_/_/_/
+, :: Spring Boot ::                (v2.5.6)
+
+˜2022-09-04 20:31:19.994  INFO 7536 --- [    Test worker] cinema.Main                              : Starting Main using Java 17.0.4.1 on Home-PC with PID 7536 (started by Home in D:\Java_Les\Cinema Room REST Service\Cinema Room REST Service\task)
+•2022-09-04 20:31:20.004  INFO 7536 --- [    Test worker] cinema.Main                              : No active profile set, falling back to default profiles: default
+í2022-09-04 20:31:22.932  INFO 7536 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28852 (http)
+~2022-09-04 20:31:22.951  INFO 7536 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+î2022-09-04 20:31:22.952  INFO 7536 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+ó2022-09-04 20:31:23.142  INFO 7536 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+§2022-09-04 20:31:23.142  INFO 7536 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2883 ms
+ö2022-09-04 20:31:24.637  INFO 7536 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+°2022-09-04 20:31:24.765  INFO 7536 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28852 (http) with context path ''
+ö2022-09-04 20:31:24.839  INFO 7536 --- [    Test worker] cinema.Main                              : Started Main in 5.836 seconds (JVM running for 8.057)
+û2022-09-04 20:31:25.534  INFO 7536 --- [io-28852-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+ç2022-09-04 20:31:25.535  INFO 7536 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+Ö2022-09-04 20:31:25.539  INFO 7536 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+/seats
+[1;31m
+Start test 2[0m
+/seats
+[1;31m
+Start test 3[0m
+f/purchase Seat{token=null, row=1, column=1, price=0} removeSeat ffdfb78e-286d-4d63-a9ac-11d1b9bc0689
+[1;31m
+Start test 4[0m
+[1;31m
+Start test 5[0m
+[1;31m
+Start test 6[0m
+f/purchase Seat{token=null, row=2, column=5, price=0} removeSeat 8110177e-ef60-470d-870f-ed6863fae1c8
+:/return {"token":"f43e9f41-aa56-4efe-bbef-06b556929f24"}
+&f43e9f41-aa56-4efe-bbef-06b556929f24
+returnSeat null
+:/return {"token":"8110177e-ef60-470d-870f-ed6863fae1c8"}
+&8110177e-ef60-470d-870f-ed6863fae1c8
+XreturnSeat Seat{token=8110177e-ef60-470d-870f-ed6863fae1c8, row=2, column=5, price=10}
+[1;31m
+Start test 7[0m
+/stats null
+[1;31m
+Start test 8[0m
+/stats super_secret
+[1;31m
+Start test 9[0m
+f/purchase Seat{token=null, row=7, column=4, price=0} removeSeat 613fc23b-65a1-4b6f-9c11-71abfa06ce7e
+[1;31m
+Start test 10[0m
+I/purchase Seat{token=null, row=1, column=1, price=0}/stats super_secret
+[1;31m
+Start test 11[0m
+o/purchase Seat{token=null, row=10, column=1, price=0}/return {"token":"613fc23b-65a1-4b6f-9c11-71abfa06ce7e"}
+&613fc23b-65a1-4b6f-9c11-71abfa06ce7e
+WreturnSeat Seat{token=613fc23b-65a1-4b6f-9c11-71abfa06ce7e, row=7, column=4, price=8}
+[1;31m
+Start test 12[0m
+J/purchase Seat{token=null, row=1, column=10, price=0}/stats super_secret
